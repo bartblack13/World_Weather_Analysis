@@ -15,36 +15,40 @@ As a real world scenario, I used the above methods to help develop an app for Pl
 ## Methods
 In order to complete the above obective, I made API calls to OpenWeatherMap.org and to Google Map Plateforms.  I used the numpy random function to generate a litst of 1500 random longitude and latitude pairs, then I used the citypy nearest_city function to find the nearest city based on the coordinates list.  This returned a new list of 615 cities.  I then made an api call to openweathermap.org and used JSON to parse collected data, generating a dataframe containing 558 cities, with 9 differnt columns of current information (see Table 1), which was then exported as a csv file for further use.
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/city%20list%20dataframe.png)
 <br />**Table 1**
 
 <br /><br />I then used this csv file to generate multiple scatter plot graphs.  In total I created 4 initial graphs where maximum temperature, humidity, cloudiness, wind speed, were each dependent on Latitude (See Figure 1).  I then sorted the cities by location in the northern or southern hemispheres, generated 8 new graphs, all of which have linear regression plots overlaid on top (See Figure 2).  The linear regressions were calculated by the linregress method from the scipy.stats library. This was done to show any correlation between latitude and the other weather patterns variables.  
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/Latitude_vs_MaxTemp.png)
 <br />**Figure 1**<br /><br />
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/max%20temp%20linear%20regression.png)
 <br />**Figure 2**
 
 <br /><br /> After generating the graphs, I used the city data from the csv file to build a heat map showing the temperature for each of the cities (See Figure 3). In order to do this I used the heat_layer function from the gmaps library.  This heat map required that the client using the app input minimum and maximum tempertures for their trip.
 
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/heat%20map.png)
+<br />**Figure 3**
+<br /><br />
+
 As a second interation for this process, I generated a new dataframe and csv that included a current "weather description" column (see Table 2), and I subsequently created a dataframe where a hotel name was listed for each city meeting the client's criteria (see Table 3).  This info was used to create a map with info markers (City name, hotel name, weather descriptions, etc) and route info (see Figures 3 and 4).
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/new%20city%20list%20dataframe.png)
 <br />**Table 2**
 
 <br /><br />
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/hotel%20table.png)
 <br />**Table 3**
-<br /><br />
-
-![This is an image]()
-<br />**Figure 3**
 <br /><br />
 
 ![This is an image]()
 <br />**Figure 4**
 <br /><br />
 
-## Results
+![This is an image]()
+<br />**Figure 5**
+<br /><br />
+
+
