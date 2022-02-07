@@ -32,7 +32,7 @@ In order to complete the above obective, I made API calls to OpenWeatherMap.org 
 <br />**Figure 3**
 <br /><br />
 
-As a second interation for this process, I generated a new dataframe and csv that included a current "weather description" column (see Table 2), and I subsequently created a dataframe where a hotel name was listed for each city meeting the client's criteria (see Table 3).  This info was used to create a map with info markers (City name, hotel name, weather descriptions, etc) and route info (see Figures 3 and 4).
+As a second interation for this process, I generated a new dataframe and csv that included a current "weather description" column (see Table 2), and I subsequently created a dataframe where a hotel name was listed for each city meeting the client's criteria (see Table 3).  This info was used to create a map with info markers (City name, hotel name, weather descriptions, etc) and route info (see Figures 4 and 5).
 
 ![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/extra%20files/new%20city%20list%20dataframe.png)
 <br />**Table 2**
@@ -43,11 +43,11 @@ As a second interation for this process, I generated a new dataframe and csv tha
 <br />**Table 3**
 <br /><br />
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map_markers.png)
 <br />**Figure 4**
 <br /><br />
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map.png)
 <br />**Figure 5**
 <br /><br />
 
